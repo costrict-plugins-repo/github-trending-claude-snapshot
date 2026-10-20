@@ -1,0 +1,30 @@
+{
+  "name": "claude-snapshot",
+  "version": "0.3.0",
+  "description": "Portable Claude Code setup snapshots — export, diff, and apply your config across machines",
+  "type": "module",
+  "main": "src/snapshot.mjs",
+  "bin": {
+    "claude-snapshot": "src/snapshot.mjs"
+  },
+  "files": ["src/", "commands/", ".claude-plugin/", "README.md", "LICENSE"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhenawer/claude-snapshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adhenawer/claude-snapshot/issues"
+  },
+  "homepage": "https://github.com/adhenawer/claude-snapshot#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test tests/snapshot.test.mjs"
+  },
+  "dependencies": {
+    "tar": "^7.0.0"
+  },
+  "keywords": ["claude-code", "plugin", "snapshot", "config", "sync"],
+  "license": "MIT"
+}
